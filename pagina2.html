@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/style.reg.css">
+    <link rel="icon" href="./IMG/favicon.png" type="image/x-icon">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav-items">
+            <a href="./pagina3.html" class="nav-link" id="">Quienes Somos</a>
+            <a href="./pagina4.html" class="nav-link" id="">Agregar gasto</a>
+
+            <a href="./index.html" class="nav-link" id="login-btn">Login</a>
+            <a href="./pagina2.html" class="nav-link" id="register-btn">Registro</a>
+        </div>
+    </nav>
+        <div class="container">
+            <h2>Registro</h2>
+            <form id="registrationForm">
+                <div class="input-group">
+                    <input type="text" name="nombre" required>
+                    <label>Nombre</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="apellido" required>
+                    <label>Apellido</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="identificacion" required>
+                    <label>Identificación</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="email" required>
+                    <label>Correo electrónico</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" name="password" required>
+                    <label>Contraseña</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="direccion_casa" required>
+                    <label>Dirección de casa</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="direccion_facturacion">
+                    <label>Dirección de facturación (opcional)</label>
+                </div>
+                <div class="input-group">
+                    <input type="date" name="fecha_nacimiento" required>
+                    <label>Fecha de nacimiento</label>
+                </div>
+                <div class="input-group">
+                    <select name="genero" required>
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                        <option value="otro">36 Tipos de Gay</option>
+                    </select>
+                    <label>Genero</label>
+                </div>
+                <div class="input-group">
+                    <input type="submit" value="Registrar">
+                </div>
+            </form>
+        </div>
+    <script src="./JS/script_reg.js"></script>
+    </body>
+    </html>

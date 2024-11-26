@@ -1,0 +1,34 @@
+Aquí te dejo tres historias de usuario para la creación de la página que has compartido, basadas en las funcionalidades y objetivos de la misma:
+
+### Historia de Usuario 1: Registro de Usuarios
+**Como** usuario nuevo,  
+**quiero** registrarme en el sistema,  
+**para que** pueda iniciar sesión y gestionar mis gastos de manera segura.
+
+**Criterios de aceptación:**
+1. El usuario debe ser capaz de ingresar su nombre, correo electrónico y contraseña en el formulario de registro.
+2. El formulario debe validar que todos los campos estén completos antes de permitir el envío.
+3. El sistema debe confirmar que el registro fue exitoso y permitir que el usuario inicie sesión inmediatamente después del registro.
+
+### Historia de Usuario 2: Gestión de Gastos
+**Como** usuario autenticado,  
+**quiero** agregar y editar mis gastos,  
+**para que** pueda llevar un control de mis finanzas personales.
+
+**Criterios de aceptación:**
+1. El usuario debe poder agregar un nuevo gasto mediante un formulario que incluya nombre del gasto, precio, fecha y una imagen del voucher (opcional).
+2. El usuario debe poder editar un gasto ya registrado desde la tabla de gastos.
+3. El sistema debe permitir al usuario ver una lista con todos sus gastos, con opciones para editar y eliminar cada gasto.
+4. El sistema debe validar los datos ingresados en el formulario (nombre del gasto, precio, fecha) antes de permitir el envío.
+
+### Historia de Usuario 3: Visualización de Información en la Página "Quienes Somos"
+**Como** visitante de la página,  
+**quiero** conocer más sobre la organización que gestiona el sistema,  
+**para que** pueda confiar en el servicio ofrecido.
+
+**Criterios de aceptación:**
+1. La página "Quienes Somos" debe mostrar información clara sobre la misión, visión y el equipo detrás del sistema.
+2. La página debe tener un diseño atractivo y fácil de leer, con encabezados y párrafos bien definidos.
+3. El usuario debe poder acceder a esta información desde el menú de navegación principal.
+
+Estas historias de usuario abordan tanto la funcionalidad como la experiencia del usuario, ayudando a guiar el desarrollo de la página para asegurar que cubra las necesidades principales de los usuarios.

@@ -1,0 +1,114 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="password"],
+.input-group input[type="date"],
+.input-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.input-group label {
+    position: absolute;
+    left: 10px;
+    top: -12px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.3s;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.input-group input:focus,
+.input-group input:valid,
+.input-group select:focus {
+    border-color: #4caf50;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group select:focus + label {
+    font-size: 15px;
+    top: -12px;
+    color: #4caf50;
+    padding: 0 5px; /* Eliminado el cambio de fondo */
+}
+
+.input-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.input-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
+body {
+    font-family: 'Roboto-Regular';
+    background-color: #f2f2f2;
+    margin: 0px;
+       
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../font/Roboto-Regular.ttf') format('woff2')
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,358 @@
+body {
+    font-family: 'Roboto-Regular';
+    background-color: #f2f2f2;
+    margin: 0px;
+       
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../font/Roboto-Regular.ttf') format('woff2')
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    transition: right 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.close-btn {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.login-container {
+    margin-top: 50px;
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 5px;
+}
+
+.login-container input,
+.login-container select {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.login-container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group select:focus + label,
+.input-group select:not(:placeholder-shown) + label {
+    top: -20px;
+    left: 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2{
+    text-align: center;
+    font-size: 28px;
+    color: #4caf50;
+    margin-bottom: 30px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+
+.input-group input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+/* Productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    /* text-align: center; */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.product-card button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #45a049;
+}
+
+/* CRUD */
+
+#productForm {
+    margin-bottom: 20px;
+}
+
+#productForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#productForm input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#productForm button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#productForm button:hover {
+    background-color: #45a049;
+}
+
+#productTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#productTable, #productTable th, #productTable td {
+    border: 1px solid #ddd;
+}
+
+#productTable th, #productTable td {
+    padding: 10px;
+    text-align: left;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+button.edit, button.delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.edit {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+button.delete {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Estilos para dispositivos de pantalla pequeña */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card {
+        padding: 10px;
+    }
+}
+
+/* Estilos para dispositivos de pantalla extra pequeña */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        padding: 5px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-card {
+        padding: 5px;
+    }
+}
+
+#quienes-somos {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container_qs {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+/* Banner styles */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh; 
+    background: url(../IMG/banner\ 1.jpg) no-repeat center center;
+    background-size: cover; 
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden; 
+}
+
